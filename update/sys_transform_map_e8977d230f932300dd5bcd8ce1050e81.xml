@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+    <sys_transform_map action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <create_new_record_on_empty_coalesce_fields>false</create_new_record_on_empty_coalesce_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>Book Transform Map</name>
+        <order>100</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[answer = (function transformEntry(source) {
+ if (source.u_binding == 'Board--')
+	// Add your code here
+	return "Board"; // return the value to be put into the target field
+else if (source.u_binding == 'Paper Back--' )
+	return "Paper Back";
+else if (source.u_binding == 'Box--ed Set')
+	return "Boxed Set";
+else if (source.u_binding == 'Paper B{ack')
+	return "Paper Back";
+	else 
+		return source.u_binding;
+})(source); 
+ 
+]]></script>
+        <source_table>x_125477_rental_se_import_set_book</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-04 13:42:03</sys_created_on>
+        <sys_id>e8977d230f932300dd5bcd8ce1050e81</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Book Transform Map</sys_name>
+        <sys_package display_value="Rental Services" source="x_125477_rental_se">c835bea20f132300dd5bcd8ce1050e50</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Services">c835bea20f132300dd5bcd8ce1050e50</sys_scope>
+        <sys_update_name>sys_transform_map_e8977d230f932300dd5bcd8ce1050e81</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-04 14:46:44</sys_updated_on>
+        <target_table>x_125477_rental_se_book</target_table>
+    </sys_transform_map>
+</record_update>
