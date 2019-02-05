@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="comments" label="Additional comments" language="en" table="x_125477_rental_se_rental_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <help/>
+            <hint/>
+            <label>Additional comments</label>
+            <language>en</language>
+            <name>x_125477_rental_se_rental_request</name>
+            <plural>Additional comments</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-02-05 12:54:35</sys_created_on>
+            <sys_id>26663ab30f9f2300dd5bcd8ce1050ebe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Additional comments</sys_name>
+            <sys_package display_value="Rental Services" source="x_125477_rental_se">c835bea20f132300dd5bcd8ce1050e50</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Rental Services">c835bea20f132300dd5bcd8ce1050e50</sys_scope>
+            <sys_update_name>sys_documentation_x_125477_rental_se_rental_request_comments_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-02-05 12:54:35</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
